@@ -1,0 +1,17 @@
+.navbar {
+  ul.navbar-nav {
+    li.nav-item {
+      a {
+        font-weight: 700;
+        font-size: 16px;
+        color: #062642;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
