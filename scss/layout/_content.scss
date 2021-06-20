@@ -136,11 +136,8 @@ Content
     padding: 0 20px;
     /* transform: translateX(-50%); */
     margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .owl-carousel .owl-nav svg {
+    @include flexbox();
+    @include justify-content(space-between);
   }
 
   .owl-carousel .owl-nav [class*='owl-']:hover {
@@ -275,7 +272,7 @@ Content
   }
 
   .product-body {
-    justify-content: center;
+    @include justify-content(center);
     padding-top: 3rem;
 
     .product-item {
@@ -531,13 +528,13 @@ Content
   }
   .count-down-timer {
     @include media-breakpoint-down(md) {
-      flex-direction: column !important;
+      @include flex-direction(column !important);
       .countdown-text {
         padding: 0 0 !important;
         margin-bottom: 1rem !important;
       }
     }
-    display: flex;
+    @include flexbox();
     align-items: center;
 
     .countdown-text {
@@ -554,11 +551,6 @@ Content
 
   .count-down-body {
     margin: 4rem 0 2rem 0;
-    @include media-breakpoint-down(lg) {
-      iframe {
-        width: 100%;
-      }
-    }
 
     .body-right {
       .count-down-subtitle {
@@ -608,7 +600,7 @@ Content
 
 .certificate-section {
   .certificate-body {
-    justify-content: center;
+    @include justify-content(center);
     margin-top: 4rem;
     margin-bottom: 4rem;
     @include media-breakpoint-down(lg) {
@@ -718,8 +710,8 @@ Content
   padding-bottom: 6rem;
 
   .representative-body {
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-wrap(wrap);
+    @include justify-content(center);
     margin-top: 4rem;
     margin-bottom: 2rem;
     @include media-breakpoint-down(xd) {
