@@ -6,8 +6,8 @@ Content
 }
 
 .carousel-section {
-  @include media-breakpoint-down(md){
-    .owl-slide-title{
+  @include media-breakpoint-down(md) {
+    .owl-slide-title {
       font-size: 60px !important;
     }
   }
@@ -161,8 +161,8 @@ Content
 
 .sign-section {
   padding: 2rem 0;
-  @include media-breakpoint-down(md){
-    img{
+  @include media-breakpoint-down(md) {
+    img {
       height: 200px;
     }
   }
@@ -220,10 +220,10 @@ Content
 }
 
 .common-section {
-  @include media-breakpoint-down(xs){
+  @include media-breakpoint-down(xs) {
     padding-left: 10px !important;
     padding-right: 10px !important;
-    .section-title{
+    .section-title {
       font-size: 23px !important;
     }
   }
@@ -246,7 +246,7 @@ Content
     }
 
     .sub-text {
-      @include media-breakpoint-up(md){
+      @include media-breakpoint-up(md) {
         width: 50%;
         margin: auto;
       }
@@ -334,7 +334,7 @@ Content
     background: #062642;
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
-    @include media-breakpoint-down(xs){
+    @include media-breakpoint-down(xs) {
       font-size: 18px;
     }
   }
@@ -372,7 +372,6 @@ Content
     transform: translateY(-50%);
     margin: 0;
   }
-
 
   .owl-prev {
     left: -6rem;
@@ -476,10 +475,10 @@ Content
           padding: 0 3px;
         }
 
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(md) {
           text-align: center;
         }
-        @include media-breakpoint-down(xs){
+        @include media-breakpoint-down(xs) {
           text-align: left;
         }
         a {
@@ -487,10 +486,10 @@ Content
             width: 80%;
             margin: 0.25rem 1rem;
           }
-          @include media-breakpoint-down(md){
+          @include media-breakpoint-down(md) {
             width: 20%;
           }
-          @include media-breakpoint-down(xs){
+          @include media-breakpoint-down(xs) {
             width: 40%;
             margin: 0.25rem 0.25rem;
           }
@@ -520,20 +519,20 @@ Content
 
 .special-offer {
   background: $background-section;
-  @include media-breakpoint-down(xs){
-    iframe{
+  @include media-breakpoint-down(xs) {
+    iframe {
       margin-bottom: 1rem;
     }
-    .body-right{
-      button{
+    .body-right {
+      button {
         width: 100%;
       }
     }
   }
   .count-down-timer {
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       flex-direction: column !important;
-      .countdown-text{
+      .countdown-text {
         padding: 0 0 !important;
         margin-bottom: 1rem !important;
       }
@@ -549,7 +548,7 @@ Content
       text-transform: uppercase;
       padding: 0 2rem 0 6rem;
       margin-bottom: 0;
-      color: #EE7D22;
+      color: #ee7d22;
     }
   }
 
@@ -567,7 +566,7 @@ Content
         font-weight: bold;
         font-size: 20px;
         line-height: 25px;
-        color: #1B5178;
+        color: #1b5178;
         text-transform: uppercase;
       }
 
@@ -576,29 +575,29 @@ Content
         font-weight: bold;
         font-size: 25px;
         line-height: 31px;
-        color: #1B5178;
+        color: #1b5178;
         text-transform: uppercase;
       }
 
       form {
         input {
           margin: 1rem 0;
-          background: #FFFFFF;
+          background: #ffffff;
           border-radius: 9px;
-          border: 0
+          border: 0;
         }
 
         textarea {
           margin: 1rem 0;
-          background: #FFFFFF;
+          background: #ffffff;
           border-radius: 9px;
-          border: 0
+          border: 0;
         }
 
         button {
           border: 0;
           padding: 0.25rem 3rem;
-          background: #01394E;
+          background: #01394e;
           border-radius: 10px;
           color: #ffffff;
         }
@@ -624,7 +623,7 @@ Content
       .certificate-item {
         width: 100% !important;
       }
-      .certificate-name{
+      .certificate-name {
         font-size: 14px !important;
         font-weight: bold !important;
       }
@@ -723,8 +722,8 @@ Content
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    @include media-breakpoint-down(xd){
-      img{
+    @include media-breakpoint-down(xd) {
+      img {
         width: 100%;
       }
     }
@@ -745,13 +744,17 @@ Content
 
       &:hover {
         &:after {
-          background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 77, 101, 0.4) 55.21%, rgba(0, 58, 77, 0.8) 100%);
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.4) 0%,
+            rgba(0, 77, 101, 0.4) 55.21%,
+            rgba(0, 58, 77, 0.8) 100%
+          );
         }
 
         .img-text {
           opacity: 1;
           margin-top: 0;
-
         }
       }
 
@@ -781,7 +784,7 @@ Content
   }
 
   .show-more {
-    border: 1px solid #C4C4C4;
+    border: 1px solid #c4c4c4;
     text-transform: uppercase;
     padding: 0.25rem 2rem;
     font-style: normal;
@@ -801,7 +804,7 @@ Content
 }
 
 .brick-section {
-  .grid-post{
+  .grid-post {
     display: none;
     .item3 {
       .item-title {
@@ -833,7 +836,7 @@ Content
         }
       }
     }
-    img{
+    img {
       width: 100%;
     }
   }
@@ -841,7 +844,7 @@ Content
     .grid-container {
       display: none !important;
     }
-    .grid-post{
+    .grid-post {
       display: block !important;
     }
   }
@@ -851,8 +854,8 @@ Content
   .grid-container {
     display: grid;
     grid-template-areas:
-    'menu main right right right '
-    'menu footer footer footer footer';
+      'menu main right right right '
+      'menu footer footer footer footer';
     grid-template-columns: 299px 239px auto;
     grid-gap: 10px;
     padding: 10px;
@@ -925,4 +928,3 @@ Content
   border-left: 1px solid #ffffff;
   padding: 0 2px 0 4px;
 }
-

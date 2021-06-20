@@ -18,20 +18,21 @@ Footer
     }
   }
 
-.row-wrapper{
-  padding: 2.5rem 0;
-  @include media-breakpoint-down(xs){
-    .row{
-      margin: 0 0 !important;
+  .row-wrapper {
+    padding: 2.5rem 0;
+    @include media-breakpoint-down(xs) {
+      .row {
+        margin: 0 0 !important;
+      }
     }
   }
-}
 
-  .col-left, .col-right {
+  .col-left,
+  .col-right {
     z-index: 1;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    @include media-breakpoint-down(xs){
+    @include media-breakpoint-down(xs) {
       padding-left: 1rem !important;
       padding-right: 1rem !important;
     }
@@ -88,9 +89,8 @@ Footer
   }
 
   .col-right {
-
     padding-top: 2rem;
-    .row{
+    .row {
       padding: 1rem 0;
     }
     .footer-title {
@@ -125,14 +125,14 @@ Footer
       font-weight: normal;
       font-size: 14px;
       line-height: 19px;
-      &.phone-number{
+      &.phone-number {
         font-size: 18px;
         font-weight: bold;
       }
     }
-    .payment-method{
+    .payment-method {
       float: right;
-      a{
+      a {
         margin: 0 0.25rem;
       }
     }

@@ -1,27 +1,9 @@
 {
-  "name": "frontend-seed-4",
-  "version": "1.8.14",
-  "description": "A basic HTML starter template for Bootstrap 4",
-  "keywords": [
-    "css",
-    "sass",
-    "html",
-    "responsive",
-    "theme",
-    "template"
-  ],
-  "homepage": "https://github.com/trungnghia112/frontend-seed-4",
-  "author": "trungnghia112 <trungnghia112@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/trungnghia112/frontend-seed-4/issues",
-    "email": "trungnghia112@gmail.com"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trungnghia112/frontend-seed-4"
-  },
+  "name": "fe-janmi",
+  "homepage": "https://chhuy.github.io/FE-Janmi/",
+  "author": "CHHuy <chehoanghuy2015@gmail.com",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "start": "gulp serve",
     "prettier": "prettier ./**/*.{json,md,scss} --write",
     "clean": "gulp clean",
@@ -72,6 +54,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "gh-pages": "^3.2.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "standard-version": "^9.1.0"

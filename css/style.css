@@ -11298,7 +11298,7 @@ Content
   text-transform: uppercase;
   padding: 0 2rem 0 6rem;
   margin-bottom: 0;
-  color: #EE7D22;
+  color: #ee7d22;
 }
 
 .special-offer .count-down-body {
@@ -11316,7 +11316,7 @@ Content
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
-  color: #1B5178;
+  color: #1b5178;
   text-transform: uppercase;
 }
 
@@ -11325,20 +11325,20 @@ Content
   font-weight: bold;
   font-size: 25px;
   line-height: 31px;
-  color: #1B5178;
+  color: #1b5178;
   text-transform: uppercase;
 }
 
 .special-offer .count-down-body .body-right form input {
   margin: 1rem 0;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 9px;
   border: 0;
 }
 
 .special-offer .count-down-body .body-right form textarea {
   margin: 1rem 0;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 9px;
   border: 0;
 }
@@ -11346,7 +11346,7 @@ Content
 .special-offer .count-down-body .body-right form button {
   border: 0;
   padding: 0.25rem 3rem;
-  background: #01394E;
+  background: #01394e;
   border-radius: 10px;
   color: #ffffff;
 }
@@ -11523,7 +11523,7 @@ Content
 }
 
 .representative-section .show-more {
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   text-transform: uppercase;
   padding: 0.25rem 2rem;
   font-style: normal;
@@ -11696,14 +11696,16 @@ Footer
   }
 }
 
-.footer .col-left, .footer .col-right {
+.footer .col-left,
+.footer .col-right {
   z-index: 1;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
 @media (max-width: 575.98px) {
-  .footer .col-left, .footer .col-right {
+  .footer .col-left,
+  .footer .col-right {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
