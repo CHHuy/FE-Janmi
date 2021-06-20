@@ -11394,7 +11394,7 @@ Content
 }
 
 .certificate-section .certificate-body .certificate-item .certificate-name:before {
-  content: url(/images/tick.png);
+  content: url(../../images/tick.png);
 }
 
 .certificate-section .certificate-body .certificate-item img {
