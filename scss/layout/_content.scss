@@ -34,6 +34,9 @@ Content
     position: relative;
     height: 595px;
     background-color: lightgray;
+    @include media-breakpoint-down(xs){
+      height: 400px;
+    }
 
     &:after {
       content: '';
@@ -69,6 +72,9 @@ Content
     line-height: 198px;
     text-transform: uppercase;
     color: #ffffff;
+    @include media-breakpoint-down(xs){
+      line-height: 100px;
+    }
   }
 
   .owl-slide-subtitle {
@@ -163,6 +169,11 @@ Content
       height: 200px;
     }
   }
+  @include media-breakpoint-down(xs){
+    img{
+      height: 150px;
+    }
+  }
 }
 
 .features-section {
@@ -247,6 +258,7 @@ Content
         width: 50%;
         margin: auto;
       }
+
       p {
         font-family: sans-serif;
         font-style: normal;
@@ -262,7 +274,9 @@ Content
 .product-section {
   position: relative;
   padding-bottom: 5rem;
-
+  @include media-breakpoint-down(xs){
+    padding: 2rem 0;
+  }
   .section-subtitle {
     .sub-text {
       p {
@@ -277,6 +291,9 @@ Content
 
     .product-item {
       margin: 0 0.5rem;
+    }
+    @include media-breakpoint-down(xs){
+      padding-top: 1rem;
     }
   }
 
@@ -305,12 +322,19 @@ Content
 .products-section {
   background: $background-section;
   padding: 4rem 0;
-
+  @include media-breakpoint-down(xs){
+    padding: 2rem 0;
+  }
   .products-body {
     margin-top: 6rem;
-
+    @include media-breakpoint-down(xs){
+      margin-top: 3rem;
+    }
     .products-carousel {
       margin: 3rem 0;
+      @include media-breakpoint-down(xs){
+        margin: 1rem 0;
+      }
     }
   }
 
@@ -382,10 +406,15 @@ Content
 .predict-section {
   padding-top: 4rem;
   padding-bottom: 6rem;
+  @include media-breakpoint-down(xs){
+    padding: 2rem 0 !important;
+  }
 
   .predict-body {
     margin-top: 4rem;
-
+    @include media-breakpoint-down(xs){
+      margin-top: 2rem;
+    }
     .predict-title {
       font-style: normal;
       font-weight: bold;
@@ -394,6 +423,9 @@ Content
       text-transform: uppercase;
       color: #1a1818;
       opacity: 0.8;
+      @include media-breakpoint-down(xs){
+        margin: 1rem 0 !important;
+      }
     }
 
     .first-row {
@@ -478,6 +510,7 @@ Content
         @include media-breakpoint-down(xs) {
           text-align: left;
         }
+
         a {
           @include media-breakpoint-down(lg) {
             width: 80%;
@@ -526,26 +559,14 @@ Content
       }
     }
   }
-  .count-down-timer {
-    @include media-breakpoint-down(md) {
-      @include flex-direction(column !important);
-      .countdown-text {
-        padding: 0 0 !important;
-        margin-bottom: 1rem !important;
-      }
-    }
-    @include flexbox();
-    align-items: center;
 
-    .countdown-text {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 25px;
-      line-height: 31px;
-      text-transform: uppercase;
-      padding: 0 2rem 0 6rem;
-      margin-bottom: 0;
-      color: #ee7d22;
+  .count-down-timer {
+    @include flexbox();
+    @include justify-content(center);
+    margin: 1rem 0;
+
+    .flipdown.flipdown__theme-dark .rotor-group-heading:before {
+      color: #052743 !important;
     }
   }
 
@@ -554,6 +575,7 @@ Content
 
     .body-right {
       .count-down-subtitle {
+        font-family: $font-mulish;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -599,6 +621,16 @@ Content
 }
 
 .certificate-section {
+  .break-line {
+    margin: auto;
+    @include media-breakpoint-up(xl) {
+      width: 45%;
+    }
+    @media (min-width: 1400px) {
+      width: 35%;
+    }
+  }
+
   .certificate-body {
     @include justify-content(center);
     margin-top: 4rem;
@@ -612,6 +644,8 @@ Content
       }
     }
     @include media-breakpoint-down(xs) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       .certificate-item {
         width: 100% !important;
       }
@@ -653,6 +687,9 @@ Content
   .coop-body {
     margin-top: 6rem;
     margin-bottom: 4rem;
+    @include media-breakpoint-down(xs){
+      margin: 2rem 0 !important;
+    }
 
     .coop-carousel {
       img {
@@ -708,17 +745,21 @@ Content
 .representative-section {
   padding-top: 4rem;
   padding-bottom: 6rem;
-
+  @include media-breakpoint-down(xs){
+    padding-bottom: 2rem;
+  }
   .representative-body {
     @include flex-wrap(wrap);
     @include justify-content(center);
     margin-top: 4rem;
     margin-bottom: 2rem;
-    @include media-breakpoint-down(xd) {
+    @include media-breakpoint-down(xs) {
+      margin-top: 0;
       img {
         width: 100%;
       }
     }
+
     .img-wrapper {
       position: relative;
       margin: 0.8rem;
@@ -737,10 +778,10 @@ Content
       &:hover {
         &:after {
           background: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0.4) 0%,
-            rgba(0, 77, 101, 0.4) 55.21%,
-            rgba(0, 58, 77, 0.8) 100%
+              180deg,
+              rgba(255, 255, 255, 0.4) 0%,
+              rgba(0, 77, 101, 0.4) 55.21%,
+              rgba(0, 58, 77, 0.8) 100%
           );
         }
 
@@ -798,6 +839,7 @@ Content
 .brick-section {
   .grid-post {
     display: none;
+
     .item3 {
       .item-title {
         font-size: 45px;
@@ -828,10 +870,14 @@ Content
         }
       }
     }
+
     img {
       width: 100%;
+      height: 400px;
+      object-fit: cover;
     }
   }
+
   @include media-breakpoint-down(lg) {
     .grid-container {
       display: none !important;

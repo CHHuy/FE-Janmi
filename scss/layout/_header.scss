@@ -3,4 +3,16 @@ Header
 ========================================================================== */
 .header {
   background: #ffffff;
+  @include media-breakpoint-down(xs){
+    .navbar {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    .navbar-toggler{
+      padding: 1px 5px;
+    }
+    .navbar {
+      min-height: 40px !important // in case you want to have a minimum navbar height
+    }
+  }
 }
