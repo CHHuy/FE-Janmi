@@ -260,7 +260,7 @@ Content
       }
 
       p {
-        font-family: sans-serif;
+        font-family: $font-opensans;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -632,6 +632,9 @@ Content
   }
 
   .certificate-body {
+    @include media-breakpoint-up(lg){
+      padding: 0 0;
+    }
     @include justify-content(center);
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -677,6 +680,16 @@ Content
         width: 177px;
         height: 280px;
       }
+    }
+    .explain{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 19px;
+      /* or 146% */
+      color: #969696;
+      margin-top: 1rem;
+      padding: 0 25px;
     }
   }
 }
@@ -890,6 +903,7 @@ Content
   padding: 4rem 0 4rem 0;
 
   .grid-container {
+    position: relative;
     display: grid;
     grid-template-areas:
       'menu main right right right '
@@ -899,7 +913,14 @@ Content
     padding: 10px;
 
     .item1 {
+      position: relative;
       grid-area: menu;
+      &:after{
+        content: url(../images/group1.png);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
 
     .item2 {
@@ -926,7 +947,7 @@ Content
 
       ul {
         list-style-type: square;
-        font-family: sans-serif;
+        font-family: $font-opensans;
         font-size: 15px;
         color: #062743;
         padding: 1.5rem 0 1rem 1rem;
@@ -953,6 +974,12 @@ Content
         width: 100%;
         height: 100%;
       }
+    }
+
+    .group2{
+      position: absolute;
+      bottom: 4%;
+      left: 23%;
     }
   }
 
