@@ -9808,6 +9808,13 @@ a.text-dark:hover, a.text-dark:focus {
   appearance: none;
 }
 
+.navbar {
+  background: #ffffff;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
 .navbar ul.navbar-nav li.nav-item a {
   font-weight: 700;
   font-size: 16px;
@@ -9819,6 +9826,14 @@ a.text-dark:hover, a.text-dark:focus {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .product-body .product-item .card {
@@ -10724,6 +10739,10 @@ Header
 ========================================================================== */
 .header {
   background: #ffffff;
+  z-index: 2;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 @media (max-width: 575.98px) {
@@ -10737,6 +10756,12 @@ Header
   .header .navbar {
     min-height: 40px !important;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -11584,11 +11609,6 @@ Content
   right: -6rem;
 }
 
-.representative-section {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
-}
-
 @media (max-width: 575.98px) {
   .representative-section {
     padding-bottom: 2rem;
@@ -11826,6 +11846,10 @@ Content
 .vertical {
   border-left: 1px solid #ffffff;
   padding: 0 2px 0 4px;
+}
+
+.anchor {
+  padding: 1.2rem 0;
 }
 
 /* ==========================================================================

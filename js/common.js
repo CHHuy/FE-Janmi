@@ -50,6 +50,17 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
     })
   }
 
+  function scrollToTop() {
+    // scroll body to 0px on click
+    $('#back-to-top').click(function() {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 400)
+      return false
+    })
+  }
+
+
   /* ==================================================
   # Owl Carousel
   ===================================================*/
@@ -247,6 +258,10 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
     })
   }
 
+  /* ==================================================
+  # Timer count down
+  ===================================================*/
+
   function countDown() {
     new FlipDown(1624665600, {
       headings: ['Ngày', 'Giờ', 'Phút', 'Giây']
@@ -259,6 +274,7 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
     owlCarouselFunc()
     productsCarouselFunc()
     countDown()
+    scrollToTop()
   }
 
   $(document).ready(function () {

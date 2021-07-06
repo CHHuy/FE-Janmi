@@ -756,8 +756,6 @@ Content
 }
 
 .representative-section {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
   @include media-breakpoint-down(xs){
     padding-bottom: 2rem;
   }
@@ -993,3 +991,8 @@ Content
   border-left: 1px solid #ffffff;
   padding: 0 2px 0 4px;
 }
+
+.anchor{
+  padding: 1.2rem 0;
+}
+
