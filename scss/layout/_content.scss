@@ -259,9 +259,13 @@ Content
         width: 50%;
         margin: auto;
       }
+      @include media-breakpoint-down(sm){
+        width: 90%;
+        margin: auto;
+      }
 
       p {
-        font-family: $font-helvebold;
+        font-family: $font-opensansbold;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -340,6 +344,7 @@ Content
   }
 
   .products-subtitle {
+    font-family: $font-helvebold;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -417,6 +422,7 @@ Content
       margin-top: 2rem;
     }
     .predict-title {
+      font-family: $font-helvebold;
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
@@ -433,6 +439,7 @@ Content
       margin-top: 1rem;
 
       label {
+        font-family: $font-helvebold;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -576,7 +583,7 @@ Content
 
     .body-right {
       .count-down-subtitle {
-        font-family: $font-opensans;
+        font-family: $font-helvebold;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -586,6 +593,7 @@ Content
       }
 
       .count-down-title {
+        font-family: $font-helvebold;
         font-style: normal;
         font-weight: bold;
         font-size: 25px;
@@ -654,6 +662,7 @@ Content
         width: 100% !important;
       }
       .certificate-name {
+        font-family: $font-helvebold;
         font-size: 14px !important;
         font-weight: bold !important;
       }
