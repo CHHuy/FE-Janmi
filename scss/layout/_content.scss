@@ -205,7 +205,7 @@ Content
       }
 
       h4 {
-        font-family: $font-opensans;
+        font-family: $font-helvebold;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -238,6 +238,7 @@ Content
   padding: 2.5rem 0 2rem 0;
 
   .section-title {
+    font-family: $font-helvebold;
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
@@ -260,7 +261,7 @@ Content
       }
 
       p {
-        font-family: $font-opensans;
+        font-family: $font-helvebold;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
